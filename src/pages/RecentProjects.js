@@ -12,8 +12,8 @@ const RecentProjects = () => {
                     Recent Projects
                 </div>
                 <div className="flex flex-col gap-12">
-                    {projects.map((project) => {
-                        return <Project project={project} />;
+                    {projects.map((project, index) => {
+                        return <Project project={project} index={index} />;
                     })}
                 </div>
             </div>
