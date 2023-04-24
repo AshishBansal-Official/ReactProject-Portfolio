@@ -19,7 +19,7 @@ const SkillsCard = ({
                     </div>
                 </div>
                 <div
-                    className={`absolute bottom-4 sm:bottom-10 text-center w-full text-lg ${textColor} font-semibold`}
+                    className={`absolute bottom-4 sm:bottom-10 text-center w-full text-lg ${textColor} font-semibold select-none`}
                 >
                     {name}
                 </div>

@@ -13,7 +13,11 @@ const Header = () => {
             </div>
             <div className="relative flex max-w-6xl w-full sm:mx-4 mx-2">
                 <div className="absolute z-50 flex w-full max-w-6xl justify-between">
-                    <a href="#home" className="cursor-pointer">
+                    <a
+                        href="#home"
+                        aria-label="Logo"
+                        className="cursor-pointer"
+                    >
                         <img
                             src={logo}
                             alt=""
@@ -21,16 +25,32 @@ const Header = () => {
                         />
                     </a>
                     <div className="flex items-center tracking-wide font-semibold gap-2 sm:gap-6 text-white sm:text-lg select-none">
-                        <a href="#home" className="cursor-pointer">
+                        <a
+                            href="#home"
+                            aria-label="Home"
+                            className="cursor-pointer"
+                        >
                             Home
                         </a>
-                        <a href="#skills" className="cursor-pointer">
+                        <a
+                            href="#skills"
+                            aria-label="Skills"
+                            className="cursor-pointer"
+                        >
                             Skills
                         </a>
-                        <a href="#projects" className="cursor-pointer">
+                        <a
+                            href="#projects"
+                            aria-label="Projects"
+                            className="cursor-pointer"
+                        >
                             Projects
                         </a>
-                        <a href="#contact" className="cursor-pointer">
+                        <a
+                            href="#contact"
+                            aria-label="Contact"
+                            className="cursor-pointer"
+                        >
                             Contact
                         </a>
                     </div>
@@ -48,6 +68,7 @@ const Header = () => {
                             <a
                                 href="https://github.com/ashishBansal-Official/"
                                 target="_blank"
+                                aria-label="Github"
                                 rel="noreferrer"
                             >
                                 <img
@@ -59,6 +80,7 @@ const Header = () => {
                             <a
                                 href="https://www.linkedin.com/in/ashish-bansal-890582199/"
                                 target="_blank"
+                                aria-label="LinkedIn"
                                 rel="noreferrer"
                             >
                                 <img

@@ -17,7 +17,7 @@ const Contact = () => {
                 positivity.
             </div>
             <div className="flex mb-6 gap-y-6 gap-10 flex-wrap mx-10 justify-center select-none">
-                <a href="mailto:ashishbansal652@gmail.com">
+                <a href="mailto:ashishbansal652@gmail.com" aria-label="Mail">
                     <div className="cursor-pointer hover:scale-105 transition-transform bg-gradient-to-l from-[#f06449] to-[#ef3636] py-2 px-6 rounded-lg text-white flex gap-2">
                         <img src={emailIcon} alt="" className="h-6" />
                         Say Hello
@@ -26,6 +26,7 @@ const Contact = () => {
                 <a
                     href="https://github.com/ashishBansal-Official/"
                     target="_blank"
+                    aria-label="Github Link"
                     rel="noreferrer"
                 >
                     <div className="cursor-pointer hover:scale-105 transition-transform bg-gradient-to-l from-[#f06449] to-[#ef3636] py-2 px-6 rounded-lg text-white flex gap-2">
@@ -36,6 +37,7 @@ const Contact = () => {
                 <a
                     href="https://www.linkedin.com/in/ashish-bansal-890582199/"
                     target="_blank"
+                    aria-label="LinkedIn Link"
                     rel="noreferrer"
                 >
                     <div className="cursor-pointer hover:scale-105 transition-transform bg-gradient-to-l from-[#f06449] to-[#ef3636] py-2 px-6 rounded-lg text-white flex gap-2">
