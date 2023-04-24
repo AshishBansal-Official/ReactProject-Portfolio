@@ -3,7 +3,10 @@ import projects from "../constants/projects";
 
 const RecentProjects = () => {
     return (
-        <div className="relative w-full py-10 sm:py-20 px-30 flex items-center justify-center">
+        <div
+            id="projects"
+            className="relative w-full py-10 sm:py-20 px-30 flex items-center justify-center"
+        >
             <div className="absolute top-0 z-0 w-full h-full bg-fixed bg-[url('images/background/2.jpg')] bg-cover bg-no-repeat">
                 <div className="w-full h-full bg-black/30"></div>
             </div>
