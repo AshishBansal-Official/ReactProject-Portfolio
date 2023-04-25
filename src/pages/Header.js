@@ -2,6 +2,9 @@ import logo from "../images/logo.png";
 import githubLogo from "../images/socials/github_icon.png";
 import linkedinLogo from "../images/socials/linkedin_icon.png";
 
+import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
+
 const Header = () => {
     return (
         <div
@@ -12,7 +15,12 @@ const Header = () => {
                 <div className="w-full h-full bg-black/30"></div>
             </div>
             <div className="relative flex max-w-6xl w-full sm:mx-4 mx-2">
-                <div className="absolute z-50 flex w-full max-w-6xl justify-between">
+                <motion.div
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 2 }}
+                    className="absolute z-50 flex w-full max-w-6xl justify-between"
+                >
                     <a
                         href="#home"
                         aria-label="Logo"
@@ -54,17 +62,41 @@ const Header = () => {
                             Contact
                         </a>
                     </div>
-                </div>
+                </motion.div>
                 <div className="flex flex-col h-full w-full items-center justify-center select-none">
                     <div className="text-white">
-                        <div className="text-lg">HI THERE,</div>
-                        <div className="text-4xl sm:text-5xl md:text-7xl font-semibold">
-                            I'M ASHISH BANSAL
+                        <motion.div
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 2 }}
+                            className="text-lg"
+                        >
+                            HI THERE,
+                        </motion.div>
+                        <div className="relative text-4xl sm:text-5xl md:text-7xl font-semibold uppercase">
+                            <div className="invisible">I'm ashish Bansal</div>
+                            <div className="absolute top-0 left-0">
+                                <Typewriter
+                                    words={["I'm Ashish Bansal"]}
+                                    loop={1}
+                                    typeSpeed={70}
+                                />
+                            </div>
                         </div>
-                        <div className="text-xl sm:text-2xl">
+                        <motion.div
+                            initial={{ opacity: 0, x: 10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 2 }}
+                            className="text-xl sm:text-2xl"
+                        >
                             A FRONTEND DEVELOPER
-                        </div>
-                        <div className="flex gap-4 py-4">
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 1.8 }}
+                            className="flex gap-4 py-4"
+                        >
                             <a
                                 href="https://github.com/ashishBansal-Official/"
                                 target="_blank"
@@ -92,7 +124,7 @@ const Header = () => {
                             <div className="rounded-lg px-4 hover:scale-105 transition-transform cursor-pointer flex items-center font-semibold bg-gradient-to-l from-[#f06449] to-[#ef3636]">
                                 Download Resume
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import Project from "./Project";
 import projects from "../constants/projects";
+import { motion } from "framer-motion";
 
 const RecentProjects = () => {
     return (
@@ -11,12 +12,24 @@ const RecentProjects = () => {
                 <div className="w-full h-full bg-black/30"></div>
             </div>
             <div className="z-10 w-full gap-12 sm:gap-20 max-w-6xl flex flex-col justify-center items-center">
-                <div className="text-3xl sm:text-5xl z-10 font-bold text-white">
+                <motion.div
+                    whileInView={{ y: [100, 0], opacity: [0, 1] }}
+                    className="text-3xl sm:text-5xl z-10 font-bold text-white"
+                >
                     Recent Projects
-                </div>
+                </motion.div>
                 <div className="flex flex-col gap-12">
                     {projects.map((project, index) => {
-                        return <Project project={project} index={index} />;
+                        return (
+                            <motion.div
+                                whileInView={{
+                                    opacity: [0, 1],
+                                    y: [50, 0],
+                                }}
+                            >
+                                <Project project={project} index={index} />
+                            </motion.div>
+                        );
                     })}
                 </div>
             </div>
