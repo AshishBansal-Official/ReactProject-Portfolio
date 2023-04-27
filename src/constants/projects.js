@@ -14,7 +14,7 @@ const projects = [
     {
         image: ytdClone,
         name: "Youtube Clone",
-        desc: "A service where users can watch and search the videos. The video service can be accessed on PCs, laptops, tablets and via mobile phones.",
+        desc: "A platform where users can watch and search the videos. The video service can be accessed on PCs, laptops, tablets and via mobile phones.",
         techUsed: [html, css, tailwind, javascript, react, redux, firebase],
         liveLink: "https://ytdclone.netlify.app/",
         githubLink:
