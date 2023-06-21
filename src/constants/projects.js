@@ -9,8 +9,29 @@ import redux from "../images/projects/techStack/redux.svg";
 import tailwind from "../images/projects/techStack/tailwind.png";
 import styledComponents from "../images/projects/techStack/styledComponents.png";
 import firebase from "../images/projects/techStack/firebase.svg";
+import nodejs from "../images/projects/techStack/nodejs.svg";
+import express from "../images/projects/techStack/express.svg";
+import mongodb from "../images/projects/techStack/mongodb.svg";
 
 const projects = [
+    {
+        image: ytdClone,
+        name: "eShop",
+        desc: "An ecommerce platform where users can search and get products. API is created to manage users, products and orders. It has features like authentication, authorization, encryption, token generation and many more. ",
+        techUsed: [
+            html,
+            css,
+            tailwind,
+            javascript,
+            react,
+            nodejs,
+            express,
+            mongodb,
+        ],
+        liveLink: "https://eshop-8646.onrender.com/",
+        githubLink:
+            "https://github.com/AshishBansal-Official/MERNProject-eShop",
+    },
     {
         image: ytdClone,
         name: "Youtube Clone",

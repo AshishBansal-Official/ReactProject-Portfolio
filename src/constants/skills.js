@@ -1,3 +1,6 @@
+import nodeIcon from "../images/skills/nodejs.svg";
+import expressIcon from "../images/skills/expressjs.svg";
+import mongodbIcon from "../images/skills/mongodb.svg";
 import reactIcon from "../images/skills/react.svg";
 import reduxIcon from "../images/skills/redux.svg";
 import firebaseIcon from "../images/skills/firebase.svg";
@@ -7,6 +10,30 @@ import cssIcon from "../images/skills/css.svg";
 import htmlIcon from "../images/skills/html.svg";
 
 const skills = [
+    {
+        name: "Node",
+        textColor: "text-lime-900",
+        bgColor: "bg-lime-300",
+        bgColorLight: "bg-lime-100",
+        icon: nodeIcon,
+        shadow: "hover:shadow-lime-200",
+    },
+    {
+        name: "Express",
+        textColor: "text-stone-900",
+        bgColor: "bg-stone-300",
+        bgColorLight: "bg-stone-100",
+        icon: expressIcon,
+        shadow: "hover:shadow-stone-200",
+    },
+    {
+        name: "MongoDB",
+        textColor: "text-green-900",
+        bgColor: "bg-green-300",
+        bgColorLight: "bg-green-100",
+        icon: mongodbIcon,
+        shadow: "hover:shadow-green-200",
+    },
     {
         name: "React",
         textColor: "text-cyan-900",
