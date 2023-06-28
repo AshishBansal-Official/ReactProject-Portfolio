@@ -11,6 +11,7 @@ const Header = () => {
         >
             <motion.div
                 whileInView={{ y: [100, 0], opacity: [0, 1] }}
+                viewport={{ once: true }}
                 className="text-5xl font-bold"
             >
                 Skills
@@ -21,6 +22,7 @@ const Header = () => {
                         <motion.div
                             whileInView={{ scale: [0, 1], opacity: [0, 1] }}
                             transition={{ duration: 0.3 + index / 5 }}
+                            viewport={{ once: true }}
                         >
                             <SkillsCard
                                 key={skill.name}

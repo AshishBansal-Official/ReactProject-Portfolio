@@ -15,6 +15,7 @@ const RecentProjects = () => {
                 <motion.div
                     whileInView={{ y: [100, 0], opacity: [0, 1] }}
                     className="text-3xl sm:text-5xl z-10 font-bold text-white"
+                    viewport={{ once: true }}
                 >
                     Recent Projects
                 </motion.div>
@@ -26,6 +27,7 @@ const RecentProjects = () => {
                                     opacity: [0, 1],
                                     y: [50, 0],
                                 }}
+                                viewport={{ once: true }}
                             >
                                 <Project project={project} index={index} />
                             </motion.div>

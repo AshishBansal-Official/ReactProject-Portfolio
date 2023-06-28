@@ -1,3 +1,4 @@
+import eShop from "../images/projects/eShop.png";
 import ytdClone from "../images/projects/ytdClone.png";
 import netflixClone from "../images/projects/netflixClone.png";
 import disneyPlusClone from "../images/projects/disneyPlusClone.png";
@@ -15,7 +16,7 @@ import mongodb from "../images/projects/techStack/mongodb.svg";
 
 const projects = [
     {
-        image: ytdClone,
+        image: eShop,
         name: "eShop",
         desc: "An ecommerce platform where users can search and get products. API is created to manage users, products and orders. It has features like authentication, authorization, encryption, token generation and many more. ",
         techUsed: [

@@ -16,6 +16,7 @@ const Contact = () => {
                     y: [50, 0],
                     transition: { type: "linear" },
                 }}
+                viewport={{ once: true }}
                 className="text-gray-600"
             >
                 What's Next
@@ -26,6 +27,7 @@ const Contact = () => {
                     y: [50, 0],
                     transition: { delay: 0.05 },
                 }}
+                viewport={{ once: true }}
                 className="text-5xl font-bold text-red-500"
             >
                 Get In Touch
@@ -36,6 +38,7 @@ const Contact = () => {
                     y: [50, 0],
                     transition: { type: "linear", delay: 0.08 },
                 }}
+                viewport={{ once: true }}
                 className="text-center max-w-[80%] md:max-w-[70%] text-gray-600 my-6"
             >
                 I embrace opportunities and am open to new connections. I am
@@ -80,6 +83,7 @@ const Contact = () => {
                     type: "linear",
                     delay: 0.35,
                 }}
+                viewport={{ once: true }}
                 className="font-semibold text-red-600"
             >
                 Designed & Built by Ashish Bansal
