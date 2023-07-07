@@ -29,7 +29,7 @@ const projects = [
             express,
             mongodb,
         ],
-        liveLink: "https://eshop-8646.onrender.com/",
+        liveLink: "https://eshop-8646.netlify.app/",
         githubLink:
             "https://github.com/AshishBansal-Official/MERNProject-eShop",
     },
