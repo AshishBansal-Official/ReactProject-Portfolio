@@ -122,7 +122,7 @@ const Header = () => {
                                 />
                             </a>
                             <a
-                                href="documents/Ashish Bansal Resume May 2024.pdf"
+                                href="documents/Ashish Bansal August 2024 Full Stack.pdf"
                                 download
                             >
                                 <div className="rounded-lg h-full px-4 hover:scale-105 transition-transform cursor-pointer flex items-center font-semibold bg-gradient-to-l from-[#f06449] to-[#ef3636]">
